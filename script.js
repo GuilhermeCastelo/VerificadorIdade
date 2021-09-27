@@ -16,7 +16,7 @@ function verificar() {
         foto.setAttribute('id', 'foto');
 
         if (rdoSexo[0].checked) {
-            genero = 'Homem';
+            genero = 'homem';
 
             if(idade < 10){
                 foto.setAttribute('src', 'img/menino_crianca.jpg');
@@ -29,7 +29,7 @@ function verificar() {
             }
 
         } else {
-            genero = 'Mulher';
+            genero = 'mulher';
 
             if(idade < 10){
                 foto.setAttribute('src', 'img/menina_crianca.jpg')
@@ -42,7 +42,7 @@ function verificar() {
             }
         }
 
-        result.innerHTML = `<p>Detectado <strong>${genero}</strong> com <strong>${idade}</strong> anos.</p>`;
+        result.innerHTML = `<p>Detectado <strong>${genero}</strong> com <strong>${idade}</strong> anos</p>`;
         result.appendChild(foto);
     }
 }
